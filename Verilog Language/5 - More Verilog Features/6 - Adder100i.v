@@ -22,7 +22,7 @@ module top_module(
         
         for (i = 1; i <=99; i = i + 1) begin: adder_blocks
             
-            one_bit_adder(.a(a[i]), .b(b[i]), .cin(cout[i - 1]), .cout(cout[i]), .sum(sum[i]));
+            one_bit_adder adder_bit(.a(a[i]), .b(b[i]), .cin(cout[i - 1]), .cout(cout[i]), .sum(sum[i]));
             
         end
         
